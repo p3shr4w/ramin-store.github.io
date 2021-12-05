@@ -1,36 +1,43 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
     scroll-behavior: smooth;
-  }
+    font-family: "Montserrat", sans-serif;
+}
 
   header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 18px 8%;
+    padding: 8px 8%;
     background-color: #24252a;
   }
   
-  .rs_logo_main {
-    cursor: pointer;
+  header img {
     width: 60px;
     height: 60px;
+  }
+
+  .aboutUsText{
+    margin: 5%;
+  }
+  
+  .footer-social-icon i:hover{
+    transition: color 0.3s ease 0s;
+    color: #C1121F;
   }
   
   .nav__links a,
   .cta,
   .overlay__content a {
-    font-family: "Montserrat", sans-serif;
     font-weight: 500;
     color: #edf0f1;
     text-decoration: none;
   }
-  
+
   .nav__links {
     list-style: none;
     display: flex;
+    margin-top: 20px;
+
   }
   
   .nav__links li {
@@ -41,21 +48,17 @@
     transition: color 0.3s ease 0s;
   }
   
-  .nav__links li a:hover {
+  .nav__links li a:hover
+   {
     color: #EE2E35;
   }
   
   .cta {
-    padding: 9px 25px;
-    background-color: rgba(238, 46, 53, 1);
-    border: none;
     border-radius: 50px;
     cursor: pointer;
     transition: background-color 0.3s ease 0s;
-  }
-  
-  .cta:hover {
-    background-color: rgba(0, 136, 169, 0.8);
+    margin: 0px;
+    padding: 0px;
   }
   
   /* Mobile Nav */
@@ -95,11 +98,18 @@
     display: block;
     transition: color 0.3s ease 0s;
   }
-  
   .overlay a:hover,
   .overlay a:focus {
     color: #EE2E35;
   }
+
+  .fa-search:hover,
+  .fa-user-circle:hover,
+  .fa-shopping-bag:hover{
+    color: #EE2E35;
+    transition: color 0.3s ease 0s
+  }
+
   .overlay .close {
     position: absolute;
     top: 20px;
@@ -131,15 +141,10 @@
 
   #about{
     text-align: center;
-  }
-  #about a, span{
     color: #495057;
     text-decoration: none;
   }
-  #about img{
-    width: 200px;
-    border-radius: 50%;
-  }
+
   #about span{
     font-size: 2.5em;
   }
@@ -148,4 +153,137 @@
     width: 10px; 
     height: 10px;
     border-radius: 100%; 
+}
+
+.footer-section {
+background: #24252A;
+position: relative;
+}
+
+.footer-content {
+position: relative;
+z-index: 1;
+}
+.footer-pattern img {
+position: absolute;
+top: 0;
+left: 0;
+height: 330px;
+background-size: cover;
+background-position: 100% 100%;
+}
+.footer-logo {
+margin-bottom: 30px;
+}
+.footer-logo img {
+  max-width: 120px;
+}
+.footer-text p {
+margin-bottom: 14px;
+font-size: 14px;
+    color: #7e7e7e;
+line-height: 28px;
+}
+.footer-social-icon span {
+color: #fff;
+display: block;
+font-size: 20px;
+font-weight: 700;
+margin-bottom: 20px;
+}
+.footer-social-icon a {
+color: #fff;
+font-size: 16px;
+margin-right: 15px;
+}
+.footer-social-icon i {
+height: 40px;
+width: 40px;
+text-align: center;
+line-height: 38px;
+border-radius: 50%;
+}
+
+.footer-widget-heading h3 {
+color: #fff;
+font-size: 20px;
+font-weight: 600;
+margin-bottom: 40px;
+position: relative;
+}
+.footer-widget-heading h3::before {
+content: "";
+position: absolute;
+left: 0;
+bottom: -15px;
+height: 2px;
+width: 50px;
+background: #C1121F;
+}
+.footer-widget ul li {
+float: left;
+width: 50%;
+margin-bottom: 12px;
+}
+.footer-widget ul li a:hover{
+color: #C1121F;
+}
+.footer-widget ul li a {
+color: #878787;
+text-transform: capitalize;
+}
+.subscribe-form {
+position: relative;
+overflow: hidden;
+}
+.subscribe-form input {
+width: 100%;
+padding: 14px 28px;
+background: #2E2E2E;
+border: 1px solid #2E2E2E;
+color: #fff;
+}
+.subscribe-form button {
+  position: absolute;
+  right: 0;
+  background: #C1121F;
+  padding: 13px 20px;
+  border: 1px solid #C1121F;
+  top: 0;
+}
+.subscribe-form button i {
+color: #fff;
+font-size: 22px;
+transform: rotate(-6deg);
+}
+.copyright-area{
+background: #202020;
+padding: 25px 0;
+}
+.copyright-text p {
+margin: 0;
+font-size: 14px;
+color: #878787;
+}
+.copyright-text p a{
+color: #f7b32b;
+}
+.footer-menu li {
+display: inline-block;
+margin-left: 20px;
+}
+.footer-menu li:hover a{
+color: #C1121F;
+}
+.footer-menu li a {
+font-size: 14px;
+color: #878787;
+}
+
+#navbarRight{
+  float: right;
+}
+
+#navbarRight i{
+  padding: 10px  ;
 }
