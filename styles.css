@@ -2,7 +2,6 @@
     scroll-behavior: smooth;
     font-family: "Montserrat", sans-serif;
 }
-
   header {
     display: flex;
     justify-content: space-between;
@@ -10,21 +9,24 @@
     padding: 8px 8%;
     background-color: #24252a;
   }
-  
+  header p:hover{
+   color: #EE2E35;
+   transition: color 0.3s ease 0s;
+   cursor: pointer;
+  }
+  #navbarRight{
+    float: right;
+  }
+  #navbarRight i{
+    padding: 10px  ;
+  }
   header img {
     width: 60px;
     height: 60px;
   }
-
   .aboutUsText{
     margin: 5%;
   }
-  
-  .footer-social-icon i:hover{
-    transition: color 0.3s ease 0s;
-    color: #C1121F;
-  }
-  
   .nav__links a,
   .cta,
   .overlay__content a {
@@ -32,41 +34,28 @@
     color: #edf0f1;
     text-decoration: none;
   }
-
   .nav__links {
     list-style: none;
     display: flex;
     margin-top: 20px;
-
   }
-  
   .nav__links li {
     padding: 0px 20px;
   }
-  
-  .nav__links li a {
+  .nav__links li a:hover{
+    color: #EE2E35;
     transition: color 0.3s ease 0s;
   }
-  
-  .nav__links li a:hover
-   {
-    color: #EE2E35;
-  }
-  
   .cta {
     border-radius: 50px;
-    cursor: pointer;
     transition: background-color 0.3s ease 0s;
     margin: 0px;
     padding: 0px;
   }
-  
   /* Mobile Nav */
-  
   .menu {
     display: none;
   }
-  
   .overlay {
     height: 100%;
     width: 0;
@@ -76,14 +65,11 @@
     top: 0;
     background-color: #24252a;
     overflow-x: hidden;
-    transition: width 0.5s ease 0s;
+    transition: width 0.3s ease 0s;
   }
-  
   .overlay--active {
     width: 100%;
-
   }
-  
   .overlay__content {
     display: flex;
     height: 100%;
@@ -91,7 +77,6 @@
     align-items: center;
     justify-content: center;
   }
-  
   .overlay a {
     padding: 15px;
     font-size: 36px;
@@ -102,14 +87,12 @@
   .overlay a:focus {
     color: #EE2E35;
   }
-
   .fa-search:hover,
   .fa-user-circle:hover,
   .fa-shopping-bag:hover{
     color: #EE2E35;
     transition: color 0.3s ease 0s
   }
-
   .overlay .close {
     position: absolute;
     top: 20px;
@@ -117,7 +100,6 @@
     font-size: 60px;
     color: #edf0f1;
   }
-  
   @media screen and (max-height: 450px) {
     .overlay a {
       font-size: 20px;
@@ -128,7 +110,6 @@
       right: 35px;
     }
   }
-  
   @media only screen and (max-width: 800px) {
     .nav__links,
     .cta {
@@ -138,23 +119,19 @@
       display: initial;
     }
   }
-
   #about{
     text-align: center;
     color: #495057;
     text-decoration: none;
   }
-
   #about span{
     font-size: 2.5em;
   }
-
   .carousel .carousel-indicators [data-bs-target] {
     width: 10px; 
     height: 10px;
     border-radius: 100%; 
 }
-
 .footer-section {
 background: #24252A;
 position: relative;
@@ -203,7 +180,10 @@ text-align: center;
 line-height: 38px;
 border-radius: 50%;
 }
-
+.footer-social-icon i:hover{
+  transition: color 0.3s ease 0s;
+  color: #C1121F;
+}
 .footer-widget-heading h3 {
 color: #fff;
 font-size: 20px;
@@ -232,30 +212,6 @@ color: #C1121F;
 color: #878787;
 text-transform: capitalize;
 }
-.subscribe-form {
-position: relative;
-overflow: hidden;
-}
-.subscribe-form input {
-width: 100%;
-padding: 14px 28px;
-background: #2E2E2E;
-border: 1px solid #2E2E2E;
-color: #fff;
-}
-.subscribe-form button {
-  position: absolute;
-  right: 0;
-  background: #C1121F;
-  padding: 13px 20px;
-  border: 1px solid #C1121F;
-  top: 0;
-}
-.subscribe-form button i {
-color: #fff;
-font-size: 22px;
-transform: rotate(-6deg);
-}
 .copyright-area{
 background: #202020;
 padding: 25px 0;
@@ -274,16 +230,13 @@ margin-left: 20px;
 }
 .footer-menu li:hover a{
 color: #C1121F;
+transition: color 0.3s ease 0s;
 }
 .footer-menu li a {
 font-size: 14px;
-color: #878787;
+color: #3B393A;
 }
 
-#navbarRight{
-  float: right;
-}
-
-#navbarRight i{
-  padding: 10px  ;
+canvas{
+  background-image: url('images/test-image.png');
 }
