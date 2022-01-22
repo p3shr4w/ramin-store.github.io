@@ -1,0 +1,133 @@
+.services-desc {
+    background-image: linear-gradient(to bottom right, #4100A3, #1998C7, #03EADA);
+    font-weight: 600;
+    display: flex;
+    flex-direction: row;
+}
+.services-desc img{
+    display: block;
+    width: 200px;
+}
+
+div.services{
+    display: flex;
+    justify-content: center;
+}
+div.services div{
+    background-color: #F2F2F2;
+    margin: 20px;
+    flex: 1;
+    border-radius: 4px;
+    padding: 10px; 
+    border: 1px solid #9C9B99;
+}
+div.services i{
+    font-size: 1.5em;
+}
+
+
+div.faqs-div{
+    display: flex;
+    flex-direction: column;
+    margin: 0 50px;
+}
+div.faqs-div div{
+    margin: 1em 0;
+    border: 1px solid #9C9B99;
+    border-radius: 8px;
+    padding: 15px;
+}
+div.faqs-div .faqs-title{
+    font-weight: 700;
+    font-size: 1.5rem;
+    display: inline;
+}
+div.faqs-div .faqs-content{
+    text-align: center;
+}
+div.faqs-div a{
+    float: right;
+    border: 1px solid #9C9B99;
+    border-radius: 6px;
+    padding: 3px 5px;
+    margin-top: 3px;
+    background-color: var(--dark-red);
+    color: var(--soft-white);
+}
+
+
+h2.brands-div-heading{
+    text-align: center !important;
+}
+
+div.brands-div{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: row;
+}
+div.brands-div-break{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: row;
+}
+div.brands-div img{
+    height: 40px;
+    width: auto;
+    margin: 20px;
+    display: inline-block;
+}
+
+h1.news-and-updates-heading{
+    text-align: center;
+    margin: 15px 0;
+}
+div.news-and-updates{
+    display: flex;
+    margin: 0 30px;
+}
+div.news-and-updates div{
+    margin: 0 20px;
+}
+
+div.stores{
+    text-align: center;
+    margin: 0 10px;
+}
+.stores h1{
+    margin: 15px 0;
+}
+.stores iframe{
+    width: 55%;
+    height: 450px;
+    border: none;
+}
+.stores img{
+    height: 450;
+    width: auto;
+}
+.stores h2{
+    margin-top: .7em;
+}
+
+@media only screen and (max-width: 900px) {
+    .stores{
+        margin: 0 80px;
+        padding: 0 20px;
+    }
+    .stores iframe{
+        width: 100%;
+        height: 350px;
+    }
+    .stores img{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    div{
+        flex-direction: column;
+    }
+}
